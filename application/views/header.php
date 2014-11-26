@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVEIT</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Morris -->
-    <link href="assets/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
     <!-- Gritter -->
-    <link href="assets/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    
 </head>
 <body>
     <div id="wrapper">
@@ -20,7 +19,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="assets/img/profile_small.jpg" />
+                            <img alt="image" class="img-circle" src="<?= base_url(); ?>assets/img/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Emiliano Scavuzzo</strong>
@@ -38,7 +37,7 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span></a>                        
+                        <a href="<?= base_url(); ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span></a>                        
                     </li>                    
                     <li>
                         <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
@@ -49,12 +48,9 @@
                             <li><a href="email_template.html">Email templates</a></li>
                         </ul>
                     </li>     
-                    <li>
-                        <a href="contacts.html"><i class="fa fa-desktop"></i><span class="nav-label">Contacts </span></a>                        
-                    </li>
-                    <li>
-                        <a href="calendar.html"><i class="fa fa-files-o"></i> <span class="nav-label">Calendar </span><span class="label label-info pull-right">NEW</span></a>                        
-                    </li>    
+                    <li><a href="calendar.html"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
+                    <li><a href="<?= base_url(); ?>index.php/calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
+                    <li><a href="contacts.html"><i class="fa fa-user"></i><span class="nav-label">Contactos </span></a></li>
                 </ul>
             </div>
         </nav><!-- Fin Menu Lateral -->
@@ -76,7 +72,7 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="assets/img/a7.jpg">
+                                            <img alt="image" class="img-circle" src="<?= base_url(); ?>assets/img/a7.jpg">
                                         </a>
                                         <div class="media-body">
                                             <small class="pull-right">46h ago</small>
@@ -89,7 +85,7 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="assets/img/a4.jpg">
+                                            <img alt="image" class="img-circle" src="<?= base_url(); ?>assets/img/a4.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy">5h ago</small>
@@ -102,7 +98,7 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="assets/img/profile.jpg">
+                                            <img alt="image" class="img-circle" src="<?= base_url(); ?>assets/img/profile.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right">23h ago</small>

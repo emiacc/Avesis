@@ -4091,3 +4091,7 @@ body.skin-3 {
     height: auto;
     min-height: 300px;
 }
+
+.widg{
+  display: none;
+}

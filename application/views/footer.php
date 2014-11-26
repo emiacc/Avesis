@@ -39,5 +39,10 @@
 <!-- ChartJS
 <script src="assets/js/plugins/chartJs/Chart.min.js"></script>
 -->
+<script type="text/javascript">
+$('body').ready(function(){
+	setTimeout(function(){$("#cd").show();},1000);
+});
+</script>
 </body>
 </html>
