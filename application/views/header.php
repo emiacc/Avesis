@@ -22,7 +22,7 @@
                             <img alt="image" class="img-circle" src="<?= base_url(); ?>assets/img/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Emiliano Scavuzzo</strong>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Jesse Pinkman</strong>
                              </span> <span class="text-muted text-xs block">Grupo 49 <b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
@@ -40,7 +40,7 @@
                         <a href="<?= base_url(); ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span></a>                        
                     </li>                    
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mail </span><span class="label label-warning pull-right">16/24</span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="mailbox.html">Inbox</a></li>
                             <li><a href="mail_detail.html">Email view</a></li>
@@ -48,7 +48,7 @@
                             <li><a href="email_template.html">Email templates</a></li>
                         </ul>
                     </li>     
-                    <li><a href="calendar.html"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
+                    <li><a href="<?= base_url(); ?>index.php/tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
                     <li><a href="<?= base_url(); ?>index.php/calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
                     <li><a href="contacts.html"><i class="fa fa-user"></i><span class="nav-label">Contactos </span></a></li>
                 </ul>
