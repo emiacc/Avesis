@@ -6,11 +6,11 @@
     <title>AVEIT</title>
     <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <!-- Morris -->
+    <!-- Morris 
     <link href="<?= base_url(); ?>assets/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <!-- Gritter -->
+    Gritter 
     <link href="<?= base_url(); ?>assets/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
-    
+    -->
 </head>
 <body>
     <div id="wrapper">

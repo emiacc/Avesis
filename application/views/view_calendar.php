@@ -2,28 +2,14 @@
  <link href="<?= base_url(); ?>assets/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
  <link href="<?= base_url(); ?>assets/css/animate.css" rel="stylesheet">
  <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
+ <style type="text/css">
+    .fc-event{
+        border: 0;
+    }
+ </style>
  <div class="wrapper wrapper-content">
     <div class="row animated fadeInDown">
-        <div class="col-lg-4">
-            <div class="ibox float-e-margins">
-                <div class="ibox-title">
-                    <h5>Eventos</h5>                    
-                </div>
-                <div class="ibox-content">
-                    <div id='external-events'>
-                        <div class='external-event black-bg'>Rendición</div>
-                        <div class='external-event navy-bg'>Fiesta Bienvenida</div>
-                        <div class='external-event yellow-bg'>Reforestación</div>
-                        <div class='external-event red-bg'>Campaña de socios</div>
-                        <div class='external-event blue-bg'>Reunión Activos</div>
-                        <p class="m-t">
-                            <input type='checkbox' id='drop-remove' class="i-checks" checked /> <label for='drop-remove'>remove after drop</label>
-                        </p>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="col-lg-7">
+        <div class="col-lg-9 col-md-10">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
                     <h5>Calendario </h5>
@@ -32,6 +18,21 @@
                     <div id="calendar"></div>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-md-2">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Eventos</h5>                    
+                </div>
+                <div class="ibox-content">
+                    <div id='external-events'>
+                        <div class='external-event navy-bg'>Grupo</div>
+                        <div class='external-event yellow-bg'>Subcomision</div>
+                        <div class='external-event red-bg'>Activos</div>
+                        <div class='external-event blue-bg'>AVEIT</div>                        
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </div>
@@ -67,7 +68,7 @@
 
         /* initialize the external events
          -----------------------------------------------------------------*/
-
+/*
 
         $('#external-events div.external-event').each(function() {
 
@@ -84,7 +85,7 @@
                 revertDuration: 0  //  original position after the drag
             });
 
-        });
+        });*/
 
 
         /* initialize the calendar
@@ -100,6 +101,7 @@
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
+            timezone: "local",
             editable: true,
             droppable: true, // this allows things to be dropped onto the calendar
             drop: function() {
@@ -111,52 +113,48 @@
             },
             events: [
                 {
-                    title: 'All Day Event',
-                    start: new Date(y, m, 1)
+                    title: 'Rendicion',
+                    start: "2014-11-6 09:00:00",
+                    end: "2014-11-6 20:00:00",                    
+                    className: "blue-bg"
                 },
                 {
-                    title: 'Long Event',
-                    start: new Date(y, m, d-5),
-                    end: new Date(y, m, d-2),
+                    title: 'Rendicion',
+                    start: "2014-11-7 09:00:00",
+                    end: "2014-11-7 20:00:00",
+                    className: "blue-bg"
                 },
                 {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d-3, 16, 0),
-                    allDay: false,
+                    title: 'Reunión G49',
+                    start: "2014-11-19 23:00:00",
+                    className: "navy-bg"
                 },
                 {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d+4, 16, 0),
-                    allDay: false
+                    title: 'Fiesta Bienvenida',
+                    start: "2014-11-22 23:00:00",
+                    className: "blue-bg"
                 },
                 {
-                    title: 'Meeting',
-                    start: new Date(y, m, d, 10, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Lunch',
-                    start: new Date(y, m, d, 12, 0),
-                    end: new Date(y, m, d, 14, 0),
-                    allDay: false
-                },
-                {
-                    title: 'Birthday Party',
-                    start: new Date(y, m, d+1, 19, 0),
-                    end: new Date(y, m, d+1, 22, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Click for Google',
-                    start: new Date(y, m, 28),
-                    end: new Date(y, m, 29),
-                    url: 'http://google.com/'
+                    title: 'Reunión Activos',
+                    start: "2014-11-25 23:00:00",
+                    className: "red-bg"
                 }
             ],
+
+            eventClick: function(calEvent, jsEvent, view) {
+               
+                alert('Event: ' + calEvent.title + " " + new Date(calEvent.start) + " " + new Date(calEvent.end));
+
+        // change the border color just for fun
+            $(this).css('border-color', 'red');
+
+            }
         });
 
+
+
+
+    
 
     });
 
