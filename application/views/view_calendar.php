@@ -61,6 +61,9 @@
 
     $(document).ready(function() {
 
+        $("ul > li").removeClass("active");
+        $("#navCalendar").addClass("active");
+
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green',
@@ -99,7 +102,7 @@
             header: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'month,agendaWeek,agendaDay'
+                right: ''
             },
             timezone: "local",
             editable: true,

@@ -36,10 +36,10 @@
                             AVEIT
                         </div>
                     </li>
-                    <li class="active">
+                    <li id="navHome" class="active">
                         <a href="<?= base_url(); ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span></a>                        
                     </li>                    
-                    <li>
+                    <li id="navMail">
                         <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mail </span><span class="label label-warning pull-right">16/24</span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="mailbox.html">Inbox</a></li>
@@ -48,9 +48,9 @@
                             <li><a href="email_template.html">Email templates</a></li>
                         </ul>
                     </li>     
-                    <li><a href="<?= base_url(); ?>index.php/tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
-                    <li><a href="<?= base_url(); ?>index.php/calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
-                    <li><a href="contacts.html"><i class="fa fa-user"></i><span class="nav-label">Contactos </span></a></li>
+                    <li id="navTrib"><a href="<?= base_url(); ?>index.php/tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
+                    <li id="navCalendar"><a href="<?= base_url(); ?>index.php/calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
+                    <li id="navContactos"><a href="contacts.html"><i class="fa fa-user"></i><span class="nav-label">Contactos </span></a></li>
                 </ul>
             </div>
         </nav><!-- Fin Menu Lateral -->

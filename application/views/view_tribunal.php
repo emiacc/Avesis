@@ -24,13 +24,13 @@
  				<div class="ibox-content inspinia-timeline">
  					<div class="timeline-item">
  						<div class="row">
- 							<div class="col-xs-3 date">
+ 							<div class="col-sm-3 date">
  								<i>-1</i>
  								24/11/2014
  								<br/>
  								<small class="text-navy">3 días atrás</small>
  							</div>
- 							<div class="col-xs-7 content no-top-border">
+ 							<div class="col-sm-7 content no-top-border">
  								<p class="m-b-xs"><strong>Sanción</strong></p>
  								<p>Por insasistencia a la reunion de socios activos del dia 23/11/2014 se le aplica un punto negativo.</p>
  							</div>
@@ -38,13 +38,13 @@
  					</div>
  					<div class="timeline-item">
  						<div class="row">
- 							<div class="col-xs-3 date">
+ 							<div class="col-sm-3 date">
  								<i>*</i>
  								15/10/2014
  								<br/>
  								<small class="text-navy">un mes atrás</small>
  							</div>
- 							<div class="col-xs-7 content">
+ 							<div class="col-sm-7 content">
  								<p class="m-b-xs"><strong>Felicitación</strong></p>
  								<p>Felicitacion por Buen Desempeño en Subcomisión.</p>
  							</div>
@@ -52,13 +52,13 @@
  					</div>
  					<div class="timeline-item">
  						<div class="row">
- 							<div class="col-xs-3 date">
+ 							<div class="col-sm-3 date">
  								<i>*</i>
  								21/11/2013
  								<br/>
  								<small class="text-navy">un año atrás</small>
  							</div>
- 							<div class="col-xs-7 content">
+ 							<div class="col-sm-7 content">
  								<p class="m-b-xs"><strong>Felicitación</strong></p>
  								<p>Felicitacion por Buen Desempeño en Subcomisión.</p>
  							</div>
@@ -66,13 +66,13 @@
  					</div>
  					<div class="timeline-item">
  						<div class="row">
- 							<div class="col-xs-3 date">
+ 							<div class="col-sm-3 date">
  								<i>-2</i>
  								29/11/2013
  								<br/>
  								<small class="text-navy">un año atrás</small>
  							</div>
- 							<div class="col-xs-7 content">
+ 							<div class="col-sm-7 content">
  								<p class="m-b-xs"><strong>Sanción</strong></p>
  								<p>Se aplican dos puntos negativos por inasistencia al mantenimiento genereal.</p>
  							</div>
@@ -99,3 +99,9 @@
 
 <!-- Peity -->
 <script src="<?= base_url(); ?>assets/js/demo/peity-demo.js"></script>
+<script>
+    $(document).ready(function() {
+		$("ul > li").removeClass("active");
+        $("#navTrib").addClass("active");
+    });
+</script>
