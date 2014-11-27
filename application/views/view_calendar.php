@@ -35,7 +35,25 @@
             </div>            
         </div>
     </div>
+</div> 
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p><strong>Jueves 06/11</strong> de 9:00 a 20:00hs</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
 </div>
+
 </div>
 </div>
 <script src="<?= base_url(); ?>assets/js/plugins/fullcalendar/moment.min.js"></script>
@@ -93,6 +111,8 @@
 
         /* initialize the calendar
          -----------------------------------------------------------------*/
+        var dias = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+        var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
         var date = new Date();
         var d = date.getDate();
         var m = date.getMonth();
@@ -117,45 +137,64 @@
             events: [
                 {
                     title: 'Rendicion',
-                    start: "2014-11-6 09:00:00",
+                    start: "2014-11-6 09:30:00",
                     end: "2014-11-6 20:00:00",                    
-                    className: "blue-bg"
+                    className: "blue-bg",
+                    id: "1"
                 },
                 {
                     title: 'Rendicion',
                     start: "2014-11-7 09:00:00",
                     end: "2014-11-7 20:00:00",
-                    className: "blue-bg"
+                    className: "blue-bg",
+                    id: "2"
                 },
                 {
                     title: 'Reunión G49',
                     start: "2014-11-19 23:00:00",
-                    className: "navy-bg"
+                    className: "navy-bg",
+                    id: "3"
                 },
                 {
                     title: 'Fiesta Bienvenida',
                     start: "2014-11-22 23:00:00",
-                    className: "blue-bg"
+                    className: "blue-bg",
+                    id: "4"
                 },
                 {
                     title: 'Reunión Activos',
                     start: "2014-11-25 23:00:00",
-                    className: "red-bg"
+                    className: "red-bg",
+                    id: "5"
                 }
             ],
 
             eventClick: function(calEvent, jsEvent, view) {
-               
-                alert('Event: ' + calEvent.title + " " + new Date(calEvent.start) + " " + new Date(calEvent.end));
-
-        // change the border color just for fun
-            $(this).css('border-color', 'red');
-
+                var inicio = new Date(calEvent.start);
+                var fin = new Date(calEvent.end);                
+                $("#myModal > div > div > .modal-header > h4").html(calEvent.title);
+                $("#myModal > div > div > .modal-body > p").html(dias[inicio.getDay()]+" "+inicio.getDate()+" de "+meses[inicio.getMonth()]+"<br> de "+inicio.getHours());
+                if(inicio.getMinutes()!=0)
+                    $("#myModal > div > div > .modal-body > p").append(":"+inicio.getMinutes());
+                $("#myModal > div > div > .modal-body > p").append("hs");
+                if(fin.getFullYear()!=1969){
+                    $("#myModal > div > div > .modal-body > p").append(" a "+fin.getHours());
+                    if(fin.getMinutes()!=0)
+                        $("#myModal > div > div > .modal-body > p").append(":"+fin.getMinutes());
+                    $("#myModal > div > div > .modal-body > p").append("hs");
+                }
+                //$(this).attr({"data-target":"#myModal", "data-toggle":"modal"});
+                //alert('Event: ' + calEvent.title + " " + new Date(calEvent.start) + " " + new Date(calEvent.end));
+                // change the border color just for fun
+                // $(this).css('border-color', 'red');
             }
         });
-
-
-
+        
+        $(".fc-day-grid-event.fc-event").each(function(){
+            $(this).attr({"data-target":"#myModal", "data-toggle":"modal"});
+            
+        });
+       
 
     
 

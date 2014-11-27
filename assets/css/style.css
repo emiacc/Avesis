@@ -4129,3 +4129,6 @@ body.skin-3 {
     padding: 96px 5px;
   }
 }
+.fc-day-grid-container, .fc-scroller{
+  height: auto!important;
+}

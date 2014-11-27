@@ -65,7 +65,7 @@
 				</div>
 			</div>								
 		</div>
-		<div class="col-lg-3 col-sm-4 col-xs-6 bounceInLeft widg">
+		<div class="col-lg-3 col-sm-4 col-xs-6 animated bounceInLeft widg">
             <div class="widget gray2-bg p-lg text-center">
                 <div class="m-b-md">
                     <i class="fa fa-thumbs-up fa-4x"></i>
@@ -158,7 +158,7 @@
 		$(".widg").each(function(){
 			var x = $(this);			
 			setTimeout(function(){x.show();},t);
-			t += 200;			
+			t += 300;			
 		});
 	});
 	function mostrarSocios(){
