@@ -38,7 +38,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-sm-6 col-xs-6 animated bounceInLeft widg" onclick="window.location='<?= base_url(); ?>index.php/tareas'">
+			<div class="col-lg-6 col-sm-6 col-xs-6 animated rubberBand widg" onclick="window.location='<?= base_url(); ?>index.php/tareas'">
 				<div class="widget style1 blue-bg">
 					<div class="row">
 						<div class="col-xs-4">
