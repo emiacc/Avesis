@@ -2628,6 +2628,9 @@ table.table-mail tr td {
 .gray-bg {
   background-color: #f3f3f4;
 }
+.gray2-bg{
+  background-color: #c2c2c2;
+}
 .white-bg {
   background-color: #ffffff;
 }
@@ -4104,11 +4107,25 @@ body.skin-3 {
   .date {
     width: 100%!important;
   }
+  #logo{
+    display: none;
+  }
+  .tit{
+    display: none;
+  }
 }
 #sociosDelMes{
   margin-top: 10px;
-  display: none;
+  display: none;  
 }
 #sociosDelMes > div > div{
   border-radius: 5px;
+}
+#logo > div{
+  padding: 35px 5px;
+}
+@media (max-width: 1199px) {
+  #logo > div{
+    padding: 96px 5px;
+  }
 }

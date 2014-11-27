@@ -2,8 +2,8 @@
 <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
 <div class="wrapper wrapper-content animated fadeInRight">
 	<div class="row">
-		<div class="col-lg-3 col-sm-6">
-			<div class="widget-head-color-box lazur-bg p-lg text-center" style="padding-top:48px;border-radius:5px;">
+		<div id="logo" class="col-lg-3 col-sm-4">
+			<div class="widget p-lg lazur-bg text-center">
 				<div class="m-b-md">
 					<h2 class="font-bold no-margins">AVEIT</h2>
 				</div>
@@ -11,112 +11,98 @@
 				<div><span>Asociación Vocacional de Estudiantes e Ingenieros Tecnológicos</span></div>                          
 			</div>
 		</div>
-		<div class="col-lg-3 col-sm-6 animated rubberBand widg">
+		<div class="col-lg-6 col-sm-8 no-padding">		
+			<div class="col-lg-6 col-sm-6 col-xs-6 animated rubberBand widg">
+				<div class="widget style1 red-bg">
+					<div class="row">
+						<div class="col-xs-4">
+							<i class="fa fa-envelope-o fa-5x"></i>
+						</div>
+						<div class="col-xs-8 text-right">
+							<span class="tit"> Mail </span>
+							<h2 class="font-bold">2</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-xs-6 animated rubberBand widg">
+				<div class="widget style1 navy-bg">
+					<div class="row">
+						<div class="col-xs-4">
+							<i class="fa fa-envelope-o fa-5x"></i>
+						</div>
+						<div class="col-xs-8 text-right">
+							<span class="tit"> Personal </span>
+							<h2 class="font-bold">1</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-xs-6 animated bounceInLeft widg" onclick="window.location='<?= base_url(); ?>index.php/tareas'">
+				<div class="widget style1 blue-bg">
+					<div class="row">
+						<div class="col-xs-4">
+							<i class="fa fa-check-circle fa-5x"></i>
+						</div>
+						<div class="col-xs-8 text-right">
+							<span class="tit"> Tareas </span>
+							<h2 class="font-bold">2</h2>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="col-lg-6 col-sm-6 col-xs-6 animated rubberBand widg" onclick="window.location='<?= base_url(); ?>index.php/tribunal'">
+				<div class="widget style1 black-bg">
+					<div class="row">
+						<div class="col-xs-4">
+							<i class="fa fa-gavel fa-5x"></i>
+						</div>
+						<div class="col-xs-8 text-right">
+							<span class="tit"> Disciplina </span>
+							<h2 class="font-bold">-3</h2>
+						</div>
+					</div>
+				</div>
+			</div>								
+		</div>
+		<div class="col-lg-3 col-sm-4 col-xs-6 bounceInLeft widg">
+            <div class="widget gray2-bg p-lg text-center">
+                <div class="m-b-md">
+                    <i class="fa fa-thumbs-up fa-4x"></i>
+                    <h1 class="m-xs">520</h1>
+                    <h3 class="font-bold no-margins">Km</h3>
+                    <small>Madrid</small>
+                </div>
+            </div>                   
+        </div>
+		<div class="col-lg-6 col-sm-4 col-xs-6 animated bounceInLeft widg" onclick="window.location='<?= base_url(); ?>index.php/calendar'">
 			<div class="widget style1 red-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-envelope-o fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> CD </span>
-						<h2 class="font-bold">2</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-sm-6 animated rubberBand widg">
-			<div class="widget style1 navy-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-envelope-o fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> Tribunal </span>
-						<h2 class="font-bold">1</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-sm-6 animated rubberBand widg">
-			<div class="widget style1 lazur-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-envelope-o fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> Grupo </span>
-						<h2 class="font-bold">3</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-sm-4 animated rubberBand widg">
-			<div class="widget style1 yellow-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-envelope-o fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> Subcomisión </span>
-						<h2 class="font-bold">0</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-sm-4 animated rubberBand widg">
-			<div class="widget style1 white-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-envelope-o fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> Personal </span>
-						<h2 class="font-bold">1</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-sm-4 animated rubberBand widg" onclick="window.location='<?= base_url(); ?>index.php/tribunal'">
-			<div class="widget style1 black-bg">
-				<div class="row">
-					<div class="col-xs-4">
-						<i class="fa fa-gavel fa-5x"></i>
-					</div>
-					<div class="col-xs-8 text-right">
-						<span> Disciplina </span>
-						<h2 class="font-bold">-3</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-sm-6 animated bounceInLeft widg" onclick="window.location='<?= base_url(); ?>index.php/calendar'">
-			<div class="widget style1 blue-bg">
 				<div class="row">
 					<div class="col-xs-4">
 						<i class="fa fa-calendar fa-5x"></i>
 					</div>
 					<div class="col-xs-8 text-right">
-						<span> Eventos </span>
+						<span class="tit"> Eventos </span>
 						<h2 class="font-bold">9</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3 col-sm-6 animated bounceInLeft widg" onclick="mostrarSocios()">
+		<div class="col-lg-3 col-sm-4 col-xs-6 animated bounceInLeft widg" onclick="mostrarSocios()">
 			<div class="widget style1 yellow-bg">
 				<div class="row">
 					<div class="col-xs-4">
 						<i class="fa fa-trophy fa-5x"></i>
 					</div>
 					<div class="col-xs-8 text-right">
-						<span> Socios del Mes </span>
+						<span class="tit"> Socios del Mes </span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<div class="row animated tada" id="sociosDelMes">
-		<div class="col-xs-4">
+		<div class="col-sm-4 col-xs-12">
 			<div class="ibox-content text-center navy-bg">
 				<h2>Yao Ming</h2>
 				<div class="m-b-sm">
@@ -129,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-sm-4 col-xs-12">
 			<div class="ibox-content text-center navy-bg">
 				<h2>Jackie Chan</h2>
 				<div class="m-b-sm">
@@ -142,7 +128,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-sm-4 col-xs-12">
 			<div class="ibox-content text-center navy-bg">
 				<h2>Brian</h2>
 				<div class="m-b-sm">
@@ -153,7 +139,7 @@
 					<a class="btn btn-xs btn-primary"><i class="fa fa-thumbs-up"></i> Like</a>
 				</div>
 			</div>
-		</div>
+		</div>		
 	</div>
 </div>
 </div>
