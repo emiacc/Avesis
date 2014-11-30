@@ -4113,10 +4113,16 @@ body.skin-3 {
   .tit{
     display: none;
   }
+  #sociosDelMes > div > div > h2{
+    font-size: 10px;
+  }
 }
 #sociosDelMes{
   margin-top: 10px;
   display: none;  
+}
+#sociosDelMes > div{
+  padding: 0 1%; 
 }
 #sociosDelMes > div > div{
   border-radius: 5px;
@@ -4131,4 +4137,8 @@ body.skin-3 {
 }
 .fc-day-grid-container, .fc-scroller{
   height: auto!important;
+}
+.img-socios{
+  width: 100%;
+  max-width: 96px;
 }

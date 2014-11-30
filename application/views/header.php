@@ -47,9 +47,9 @@
                             <li><a href="mail_compose.html">Compose email</a></li>
                         </ul>
                     </li>     
-                    <li id="navTrib"><a href="<?= base_url(); ?>index.php/tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
-                    <li id="navCalendar"><a href="<?= base_url(); ?>index.php/calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
-                    <li id="navTareas"><a href="<?= base_url(); ?>index.php/tareas"><i class="fa fa-check-circle"></i><span class="nav-label">Tareas </span></a></li>
+                    <li id="navTrib"><a href="<?= base_url(); ?>tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
+                    <li id="navCalendar"><a href="<?= base_url(); ?>calendar"><i class="fa fa-calendar-o"></i> <span class="nav-label">Calendario </span><span class="label label-info pull-right">NEW</span></a></li>    
+                    <li id="navTareas"><a href="<?= base_url(); ?>tareas"><i class="fa fa-check-circle"></i><span class="nav-label">Tareas </span></a></li>
                     <li id="navContactos"><a href="contacts.html"><i class="fa fa-user"></i><span class="nav-label">Contactos </span></a></li>
                 </ul>
             </div>
