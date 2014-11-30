@@ -45,7 +45,6 @@
                             <li><a href="mailbox.html">Inbox</a></li>
                             <li><a href="mail_detail.html">Email view</a></li>
                             <li><a href="mail_compose.html">Compose email</a></li>
-                            <li><a href="email_template.html">Email templates</a></li>
                         </ul>
                     </li>     
                     <li id="navTrib"><a href="<?= base_url(); ?>index.php/tribunal"><i class="fa fa-gavel"></i> <span class="nav-label">Disciplina </span></a></li>    
