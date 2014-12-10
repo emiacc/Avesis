@@ -163,7 +163,7 @@
                 },
                 {
                     title: 'Reunión Activos',
-                    start: "2014-11-25 23:00:00",
+                    start: "2014-12-25 23:00:00",
                     className: "red-bg",
                     id: "5"
                 }
@@ -187,13 +187,14 @@
                 //alert('Event: ' + calEvent.title + " " + new Date(calEvent.start) + " " + new Date(calEvent.end));
                 // change the border color just for fun
                 // $(this).css('border-color', 'red');
+                $(".fc-day-grid-event.fc-event").each(function(){
+                $(this).attr({"data-target":"#myModal", "data-toggle":"modal"});
+            
+                });
             }
         });
         
-        $(".fc-day-grid-event.fc-event").each(function(){
-            $(this).attr({"data-target":"#myModal", "data-toggle":"modal"});
-            
-        });
+        
        
 
     

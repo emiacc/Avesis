@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://192.168.1.5/Avesis';
+$config['base_url']	= 'http://localhost/Avesis';
 
 /*
 |--------------------------------------------------------------------------
